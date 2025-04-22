@@ -22,7 +22,6 @@ Cybersecurity Awareness Assistant
 - 👨‍💻 **User interaction** with personalized greetings
 - 🤖 **Dictionary-based chatbot** with inherited knowledge base
 - 💬 **Funny and educational responses**
-- 💡 **Cyber Tip of the Day** with random rotation
 - 🔄 **Input validation** with default fallback responses
 - 🎭 **Typing effect** to simulate natural bot response
 - 🌈 **Colored console interface**
