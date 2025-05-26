@@ -151,10 +151,25 @@ namespace Chatbot
                 {
                     ShowBotResponse(response);
                 }
+                else if (TryGetKeywordResponse(input.ToLower(), out string keywordResponse))
+                {
+                    ShowBotResponse(keywordResponse);
+                }
+                else if (TryGetRandomResponse(input.ToLower(), out string randomResponse))
+                {
+                    ShowBotResponse(randomResponse);
+                }
+                else if (TryGetFollowUpResponse(input.ToLower(), out string followUp))
+                {
+                    ShowBotResponse(followUp);
+                }
                 else
                 {
-                    ShowBotResponse("Error 404: Smart comeback not found. Try asking about something cyber-y.");
+                    ShowBotResponse("Hmm, I'm not sure about that. Try asking about a cybersecurity topic.");
                 }
+
+
+
 
                 Console.WriteLine("\nPress Enter to continue...");
                 Console.ReadLine();
